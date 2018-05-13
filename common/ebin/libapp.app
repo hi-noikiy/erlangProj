@@ -1,0 +1,10 @@
+{application,libapp,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{libapp_app,[]}},
+              {env,[]},
+              {modules,[jpush,lib_config,lib_crypto,lib_http,lib_seed,lib_sys,
+                        lib_timer,lib_util,libapp_app,libapp_sup,mochijson,
+                        mochijson2,mochinum,mochiweb_html]}]}.

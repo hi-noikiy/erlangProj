@@ -1,0 +1,17 @@
+{
+	application, bitServer,
+	[
+		{description, "this is bitServer"},
+		{vsn, "0.1.0.0"},
+		{registered, []},
+		{registered, [bitServer_sup]}, 
+		{applications, [
+		              kernel,
+		              stdlib,
+		              sasl
+		             ]},
+		{mod, { bitServer_app, []}},
+		{env, []},
+		{start_phases, []} 
+	]
+}.
