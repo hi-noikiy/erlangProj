@@ -6,7 +6,7 @@
 
 %% 回包数据分析
 handle_data(RetJsonBin) ->
-	io:format("RetJsonBin---------recv:~p", [RetJsonBin]).
+	io:format("RetJsonBin---------recv:~p ~n", [RetJsonBin]).
 	% {array, JsonList} = mochijson:decode(RetJsonBin),
 	% io:format("JsonList ----- ~p", [JsonList]),
 	% Fun = fun(JsonBin) ->
