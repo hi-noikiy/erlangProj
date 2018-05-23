@@ -10,7 +10,7 @@ handle_data(RetJsonBin) ->
 	io:format("JsonList ----- ~p", [JsonList]),
 	Fun = fun(JsonBin) ->
 		{struct, JsonL} = JsonBin,
-		io:format("JsonL--->~p", JsonL)
+		io:format("JsonL--->~p", [JsonL])
 	end,
 	lists:foreach(Fun, JsonList).
 	%case proplists:get_value("ResultCode", JsonL) of
