@@ -7,6 +7,11 @@
 -record(record_okex_pid , {pid_name, pid}).
 -define(ETS_OKEX_PID, ets_okex_pid).
 
+%%[时间 ,开盘价,最高价,最低价,收盘价,成交量(张),成交量(币)]
+%%[string, string, string, string, string, string]
+-record(record_okex_kline , {ts, open, high, low, papers, coins, time}).
+-define(DATA_ETH_KLINE, ets_eth_kline).
+
 %% 心跳间隔 28 秒
 -define(HEART_BEAT_INTERVAL, 30 * 1000).
 

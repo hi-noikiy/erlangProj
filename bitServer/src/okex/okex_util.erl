@@ -16,10 +16,10 @@ okex_key_to_api(OkexKey) ->
 	if 
 		OkexKey == hy_eth_min ->
 			"ok_sub_futureusd_eth_kline_this_week_1min";
-		OkexKey == hy_eth_5min ->
-			"ok_sub_futureusd_eth_kline_this_week_5min";
-		OkexKey == hy_btc_min ->
-			"ok_sub_futureusd_btc_kline_this_week_1min";
+		% OkexKey == hy_eth_5min ->
+		% 	"ok_sub_futureusd_eth_kline_this_week_5min";
+		% OkexKey == hy_btc_min ->
+		% 	"ok_sub_futureusd_btc_kline_this_week_1min";
 		OkexKey == hy_eth_ticker ->
 			"ok_sub_futureusd_eth_ticker_this_week";
 		true ->
