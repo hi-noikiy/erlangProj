@@ -8,6 +8,7 @@
               {env,[]},
               {start_phases,[]},
               {modules,[bitServer_app,bitServer_sup,bit_server,cat_util,
-                        okex_cc_api,okex_data,okex_data_handler,okex_hy_api,
-                        okex_timer,okex_util,websocket_client,
-                        websocket_client_handler,websocket_req]}]}.
+                        okex_cc_api,okex_data,okex_data_analyse,
+                        okex_data_handler,okex_hy_api,okex_timer,okex_util,
+                        websocket_client,websocket_client_handler,
+                        websocket_req]}]}.

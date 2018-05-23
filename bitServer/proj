@@ -18,6 +18,7 @@ jpush
 ,bitServer_sup
 ,cat_util
 ,okex_cc_api
+,okex_data_analyse
 ,okex_data
 ,okex_data_handler
 ,okex_hy_api

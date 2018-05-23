@@ -9,7 +9,7 @@
 
 mod_init() ->
 	% kline tick data 
-	ets:new(?DATA_ETH_KLINE, [{keypos,#record_okex_kline.ts}, named_table, public, set, {write_concurrency,true}]),
+	ets:new(?DATA_ETH_KLINE, [{keypos,#record_okex_kline.ts}, named_table, public, ordered_set, {write_concurrency,true}]),
 
 	ets:new(?ETS_OKEX_PID, [{keypos,#record_okex_pid.pid_name}, named_table, public, set, {write_concurrency,true}]),
 	%
