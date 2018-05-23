@@ -6,6 +6,11 @@
 
 %% 回包数据分析
 handle_data(RetJsonBin) ->
-	{struct, JsonL} = mochijson:decode(RetJsonBin),
-	io:format("JsonL ----- ~p", [JsonL]).
+	{array, JsonList} = mochijson:decode(RetJsonBin),
+	io:format("JsonList ----- ~p", [JsonList]),
+	Fun = fun(JsonBin) ->
+		{struct, JsonL} = JsonBin,
+		io:format("JsonL--->~p", JsonL)
+	end,
+	lists:foreach(Fun, JsonList).
 	%case proplists:get_value("ResultCode", JsonL) of
