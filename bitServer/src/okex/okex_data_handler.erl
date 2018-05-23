@@ -39,6 +39,7 @@ websocket_handle({pong, _}, _ConnState, State) ->
 websocket_handle({text, Msg}, _ConnState, State) ->
     {OkexPidName} = State,
     io:format("----Received ~p Msg ~p ~n", [OkexPidName, Msg]),
+    okex_data_analyse:handle_data(Msg),
     {ok, State}.
     %%{reply, {text, Bin}, State + 1}.
 
