@@ -18,6 +18,8 @@ okex_key_to_api(OkexKey) ->
 			"ok_sub_futureusd_eth_kline_this_week_1min";
 		OkexKey == hy_btc_min ->
 			"ok_sub_futureusd_btc_kline_this_week_1min";
+		OkexKey == hy_eth_ticker ->
+			"ok_sub_futureusd_eth_ticker_this_week";
 		true ->
 			"ok_sub_futureusd_ltc_kline_this_week_1min"
 	end.
